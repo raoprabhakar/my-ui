@@ -1,0 +1,22 @@
+{
+  "name": "my-ui",
+  "version": "1.0.0",
+  "description": "This package used for internal project\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raoprabhakar/my-ui.git"
+  },
+  "author": "Prabhakara Rao Rama Rao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raoprabhakar/my-ui/issues"
+  },
+  "homepage": "https://github.com/raoprabhakar/my-ui#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
