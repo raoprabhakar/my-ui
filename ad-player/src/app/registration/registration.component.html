@@ -1,0 +1,17 @@
+<form [formGroup]="fg">
+    <div>
+        <label>First Name : </label><input type="text" formControlName="firstName"/><br/><br/>
+        <label>Last Name : </label><input type="text" formControlName="lastName" /><br/><br/>
+        <label>Email : </label><input type="text" formControlName="email" /><br/><br/>
+        <label>Phone : </label><input type="text" formControlName="phone" /><br/><br/>
+    </div>
+</form>
+
+
+<form [formGroup]="cart">
+    <div id="cart-block-id">
+        <label>Quantity : </label><input id="qnty" type="text" formControlName="qnty"/>&nbsp;&nbsp;
+        <button (click) = "addQnty()">Add</button> &nbsp;
+        <button (click) = "removeQnty()">Remove</button>
+    </div>
+</form>
