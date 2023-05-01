@@ -14,10 +14,16 @@ export class AdsDisplayerComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    let zipCode = "75019"
-    this.adsPikcerService.findPartnerImageByLocation(zipCode).subscribe((data) => {
-      this.data = data.output;
-    })
+    let zipCodeArray = ["75019","75063"];
+    setInterval(()=>{
+      const randomIndex = Math.floor(Math.random() * zipCodeArray.length);
+      console.log(randomIndex);
+      let zipCode = zipCodeArray[randomIndex]
+      this.adsPikcerService.findPartnerImageByLocation(zipCode).subscribe((data) => {
+        this.data = data.output;
+      });
+    },5000)
+    
   }
 
 }
